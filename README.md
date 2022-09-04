@@ -17,4 +17,4 @@ To install the config on a mac - in the ~HOME directory run:
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
-Alacritty uses JetBrainsMono NF (any nerd font would work)
+Alacritty uses JetBrainsMono NF - any [Nerd Font](https://www.nerdfonts.com/) - otherwise edit icons
