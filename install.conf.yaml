@@ -1,0 +1,17 @@
+# install.conf.yaml
+- defaults:
+  link:
+    relink: true
+
+- clean: ['~']
+
+- link:
+  # shell stuff
+  ~/.zshrc: shell/.zshrc
+  # nvim
+  ~/.config/nvim: .config/nvim
+  # alacritty
+  ~/.config/alacritty/alacritty.yml: .config/alacritty/alacritty.yml
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
