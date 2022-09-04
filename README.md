@@ -4,14 +4,14 @@ My dotfiles synced with [dotbot](https://github.com/anishathalye/dotbot).
 
 contains configs for:
 - [nvim](https://neovim.io/)
-- [alacritty](https://alacritty.org/)
-- zsh
+- [Alacritty](https://alacritty.org/)
+- Zzh
 
 **TODO** [tmux](https://github.com/tmux/tmux/wiki)
 
 Careful! This will override existing files
 
-To sync on mac clone into ~HOME directory and run:
+To sync on mac - in the ~HOME directory run:
 
 ```
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
@@ -19,3 +19,4 @@ $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./instal
 
 Alacritty uses JetBrainsMono NF (any nerd font would work)
 
+Main 
