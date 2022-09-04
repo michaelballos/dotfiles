@@ -11,7 +11,7 @@ contains configs for:
 
 Careful! This will override existing files
 
-To sync on mac clone into ~ directory and run:
+To sync on mac clone into ~HOME directory and run:
 
 ```
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
