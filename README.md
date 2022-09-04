@@ -1,6 +1,6 @@
 # dotfiles
 
-dotfiles sym linked with [dotbot](https://github.com/anishathalye/dotbot). 
+dotfiles symlinked with [dotbot](https://github.com/anishathalye/dotbot). 
 
 contains configs for:
 - [nvim](https://neovim.io/)
