@@ -100,14 +100,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vimlua='cd ~/.config/nvim'
-alias vim = 'nvim'
+alias vim='nvim'
 
 ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
 
-source $ZSH_BASE/antigen/antigen.zsh # Load Antigen
+source $ZSH_BASE/shell/antigen.zsh # Load Antigen
 
-source ~/.aliases # Source some extra files
-source ~/.functions
+#source ~/.aliases # Source some extra files
 
 antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
 
