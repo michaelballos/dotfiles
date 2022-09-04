@@ -17,5 +17,5 @@ To sync on mac clone into ~HOME directory and run:
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
-Alacritty uses JetBrainsMono NF in from the fonts directory
+Alacritty uses JetBrainsMono NF (any nerd font would work)
 
