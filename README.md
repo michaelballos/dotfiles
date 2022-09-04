@@ -11,12 +11,10 @@ contains configs for:
 
 Careful! This will override existing files
 
-To sync on mac - in the ~HOME directory run:
+To install the config on a mac - in the ~HOME directory run:
 
 ```
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
 Alacritty uses JetBrainsMono NF (any nerd font would work)
-
-Main 
