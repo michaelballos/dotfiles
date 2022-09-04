@@ -1,6 +1,6 @@
 # dotfiles
 
-My personal dotfiles synced with [dotbot](https://github.com/anishathalye/dotbot). 
+My dotfiles synced with [dotbot](https://github.com/anishathalye/dotbot). 
 
 contains configs for:
 - [nvim](https://neovim.io/)
