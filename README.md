@@ -7,7 +7,7 @@ contains configs for:
 - [alacritty](https://alacritty.org/)
 - zsh
 
-// todo [tmux](https://github.com/tmux/tmux/wiki)
+**TODO** [tmux](https://github.com/tmux/tmux/wiki)
 
 Careful! This will override existing files
 
