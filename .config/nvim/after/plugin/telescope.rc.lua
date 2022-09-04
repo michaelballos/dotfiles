@@ -8,7 +8,7 @@ local builtin = require('telescope.builtin')
 local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
 end
-local fb_actions = require 'telescope'.extensions.file_browser.actions
+local fb_actions = require'telescope'.extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
@@ -23,20 +23,6 @@ telescope.setup {
       theme = 'ivy',
       -- disables netrw and use telescope-file-browser in its place
       hijack_netrw = true,
-      mappings = {
-        -- your custom insert mode mappings
-        ["i"] = {
-          ["<C-w>"] = function() vim.cmd('normal vbd') end,
-        },
-        ["n"] = {
-          -- your custom normal mode mappings
-          ["N"] = fb_actions.create,
-          ["h"] = fb_actions.goto_parent_dir,
-          ["/"] = function()
-            vim.cmd('startinsert')
-          end
-        },
-      },
     },
   },
 }
@@ -59,7 +45,7 @@ end)
 map('n', '<leader>t', function()
   builtin.help_tags()
 end)
-map('n', '<leader>,', function()
+map('n', '<leader>;', function()
   builtin.resume()
 end)
 map('n', '<leader>e', function()

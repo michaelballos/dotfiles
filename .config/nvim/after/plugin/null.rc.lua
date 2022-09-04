@@ -19,6 +19,7 @@ local completion = b.completion
 
 local sources = {
   diagnostics.tsc,
+  code_actions.eslint,
   code_actions.gitsigns,
   completion.luasnip,
   hover.dictionary

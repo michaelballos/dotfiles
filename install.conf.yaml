@@ -13,7 +13,7 @@
     # nvim
     ~/.config/nvim: .config/nvim
     # alacritty
-    ~/.config/alacritty/alacritty.yml: .config/alacritty/alacritty.yml
+    ~/.config/alacritty: .config/alacritty
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

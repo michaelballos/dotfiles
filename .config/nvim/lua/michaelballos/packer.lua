@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
   -- completion
   use 'hrsh7th/nvim-cmp'
   -- tree sitter
-  use { 
+  use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }

@@ -1,5 +1,9 @@
 window:
   opacity: 0.6
+  decorations: Transparent
+  padding:
+    y: 30
+    x: 10
 font:
   normal:
     family: JetBrainsMono NF
@@ -62,4 +66,3 @@ colors:
     cyan: '#78DCE8'
     white: '#FCFCFA'
 theme: Monokai-Pro
-
