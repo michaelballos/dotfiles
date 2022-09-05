@@ -4,11 +4,48 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="apple"
+#ZSH_THEME="apple"
+plugins=(git)
+
+ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
+
+#source ~/.aliases # Source some extra files
+source $ZSH/oh-my-zsh.sh
+source $ZSH_BASE/shell/antigen.zsh # Load Antigen
+
+# aliases
+alias vimlua='cd ~/.config/nvim'
+alias vim='nvim'
+alias lg='lazygit'
+
+# Terminal stuff
+antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle z
+
+# Node stuff
+antigen bundle node
+antigen bundle npm
+
+# Do OS dependant stuff
+case `uname` in
+  Darwin)
+    # Commands for OS X go here
+    antigen bundle osx
+  ;;
+  Linux)
+    # Commands for Linux go here
+  ;;
+esac
+
+# Set the theme
+antigen theme theunraveler
+
+# And lastly, apply the Antigen stuff
+antigen apply
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,10 +107,6 @@ ZSH_THEME="apple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -99,41 +132,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vimlua='cd ~/.config/nvim'
-alias vim='nvim'
-
-ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
-
-source $ZSH_BASE/shell/antigen.zsh # Load Antigen
-
-#source ~/.aliases # Source some extra files
-
-antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
-
-# Terminal stuff
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle z
-
-# Node stuff
-antigen bundle node
-antigen bundle npm
-
-# Do OS dependant stuff
-case `uname` in
-  Darwin)
-    # Commands for OS X go here
-    antigen bundle osx
-  ;;
-  Linux)
-    # Commands for Linux go here
-  ;;
-esac
-
-# Set the theme
-antigen theme theunraveler
-
-# And lastly, apply the Antigen stuff
-antigen apply
