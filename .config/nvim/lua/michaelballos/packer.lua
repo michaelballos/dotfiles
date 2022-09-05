@@ -4,11 +4,11 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
   print('installing packer u lil bitch')
   packer_bootstrap = fn.system({
-    'git', 
-    'clone', 
-    '--depth', 
-    '1', 
-    'https://github.com/wbthomason/packer.nvim', 
+    'git',
+    'clone',
+    '--depth',
+    '1',
+    'https://github.com/wbthomason/packer.nvim',
     install_path
   })
   vim.cmd [[packadd packer.nvim]]
@@ -66,8 +66,14 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   -- git diff
   use 'sindrets/diffview.nvim'
-  -- hook into lsp clien
+  -- hook into lsp client
   use 'jose-elias-alvarez/null-ls.nvim'
+  -- toggle terminals
+  use 'akinsho/toggleterm.nvim'
+  -- notifications
+  use 'rcarriga/nvim-notify'
+  -- desktop notifications
+  -- use 'simrat39/desktop-notify.nvim'
 
 	--[[
      --
