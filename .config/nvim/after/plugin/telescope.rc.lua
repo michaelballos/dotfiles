@@ -8,6 +8,7 @@ local builtin = require('telescope.builtin')
 local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
 end
+
 local fb_actions = require'telescope'.extensions.file_browser.actions
 
 telescope.setup {
@@ -20,7 +21,7 @@ telescope.setup {
   },
   extensions = {
     file_browser = {
-      theme = 'ivy',
+      theme = 'dropdown',
       -- disables netrw and use telescope-file-browser in its place
       hijack_netrw = true,
     },
