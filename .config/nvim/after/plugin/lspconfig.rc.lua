@@ -4,24 +4,11 @@ if (not present) then
   return
 end
 
--- Mappings.
--- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { 
-  noremap=true, 
-  silent=true 
-}
-
-map('n', '<space>e', vim.diagnostic.open_float, opts)
-map('n', '[d', vim.diagnostic.goto_prev, opts)
-map('n', ']d', vim.diagnostic.goto_next, opts)
-map('n', '<space>q', vim.diagnostic.setloclist, opts)
-
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -77,7 +64,6 @@ lsp.sumneko_lua.setup {
   },
 }
 
-
 -- Use a loop to conveniently setup common servers with common settings
 -- and map buffer local keybindings when the language server attaches
 -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -88,7 +74,6 @@ local servers = {
   'dockerls',
   'eslint',
   'graphql',
-  'html',
   'quick_lint_js',
   'jsonls',
   'marksman',
