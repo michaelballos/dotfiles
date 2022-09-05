@@ -7,10 +7,6 @@
 
 contains configs for:
 - [nvim](https://neovim.io/)
-- [alacritty](https://alacritty.org/)
-- [zsh](https://www.zsh.org/)
-
-nvim plugins are 100% lua:
   - [packer](https://github.com/wbthomason/packer.nvim)
   - [plenary](https://github.com/nvim-lua/plenary.nvim)
   - [web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
@@ -38,7 +34,8 @@ nvim plugins are 100% lua:
   - [null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
   - [toggleterm](https://github.com/akinsho/toggleterm.nvim)
   - [notify](https://github.com/rcarriga/nvim-notify)
-
+- [alacritty](https://alacritty.org/)
+- [zsh](https://www.zsh.org/)
 
 Install will override system files
 ```
