@@ -72,8 +72,6 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim'
   -- notifications
   use 'rcarriga/nvim-notify'
-  -- desktop notifications
-  -- use 'simrat39/desktop-notify.nvim'
 
 	--[[
      --
