@@ -9,7 +9,7 @@ contains configs for:
 
 **TODO** [tmux](https://github.com/tmux/tmux/wiki)
 
-Careful! This will override existing files
+This will override existing files
 
 To install the config on a mac - in the ~HOME directory run:
 
