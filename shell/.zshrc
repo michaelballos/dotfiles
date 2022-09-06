@@ -1,14 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Base directory for ZSH configuration
-ZSH_BASE=$HOME/dotfiles
+# TEST
 
 # paths
+export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh" # path to oh-my-zsh
 
 # source some extra files
 source $ZSH/oh-my-zsh.sh
-source $ZSH_BASE/shell/antigen.zsh 
+source $DOTFILES/shell/antigen.zsh 
 source $(brew --prefix nvm)/nvm.sh
 
 #ZSH_THEME="apple"
@@ -18,7 +19,7 @@ plugins=(
 )
 
 # aliases
-alias vimlua="cd $ZSH_BASE/.config/nvim"
+alias vimlua="cd $DOTFILES/.config/nvim"
 alias v="nvim"
 alias lg="lazygit"
 alias zc="cd $HOME/dev/zetocam"
