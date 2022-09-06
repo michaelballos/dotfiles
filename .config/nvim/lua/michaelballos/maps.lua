@@ -21,7 +21,9 @@ map('n', '<C-l>', '<C-w>l', silent)
 
 --$ file
 -- quick close file no save
-map('n', '<leader>q', '<cmd>:q<CR>', silent)
+map('n', '<leader>c', '<cmd>:q<CR>', silent)
+-- quick save and close file regardless of buffer changes
+map('n', '<leader>q', '<cmd>:wq!<CR>', silent)
 --- quick save file
 map('n', '<leader>w', '<cmd>:w<CR>', silent)
 -- new vertical split
