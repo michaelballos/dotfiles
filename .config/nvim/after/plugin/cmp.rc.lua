@@ -21,8 +21,19 @@ cmp.setup({
     }),
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'buffer' },
+    { name = 'path'},
+    { 
+      name = 'nvim_lsp', 
+      keyword_length = 3 
+    },
+    { 
+      name = 'buffer', 
+      keyword_length = 3 
+    },
+    { 
+      name = 'luasnip', 
+      keyword_length = 2 
+    },
   }),
   formatting = {
     format = lspkind.cmp_format({ 
@@ -31,11 +42,6 @@ cmp.setup({
     })
   }
 })
-
-vim.cmd [[
-  set completeopt=menuone,noinsert,noselect
-  highlight! default link CmpItemKind CmpItemMenuDefault
-]]
 
 -- " Use <Tab> and <S-Tab> to navigate through popup menu
 -- ignoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
