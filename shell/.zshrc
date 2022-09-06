@@ -1,50 +1,55 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Base directory for ZSH configuration
+ZSH_BASE=$HOME/dotfiles
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# paths
+export ZSH="$ZSH_BASE/.oh-my-zsh" # path to oh-my-zsh
+export NVM_DIR="$ZSH_BASE/.nvm" # path to nvm 
+
+# source some extra files
+source $ZSH/oh-my-zsh.sh
+source $ZSH_BASE/shell/antigen.zsh 
+source $(brew --prefix nvm)/nvm.sh
 
 #ZSH_THEME="apple"
-plugins=(git)
-
-ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
-
-#source ~/.aliases # Source some extra files
-source $ZSH/oh-my-zsh.sh
-source $ZSH_BASE/shell/antigen.zsh # Load Antigen
+plugins=(
+  git
+  aliases
+)
 
 # aliases
-alias vimlua='cd ~/.config/nvim'
-alias vim='nvim'
-alias lg='lazygit'
+alias vimlua="cd $ZSH_BASE/.config/nvim"
+alias v="nvim"
+alias lg="lazygit"
+alias zc="cd $HOME/dev/zetocam"
 
-# Terminal stuff
-antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
+# antigen terminal stuff
+antigen use oh-my-zsh 
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle z
 
-# Node stuff
+# antigen node stuff
 antigen bundle node
 antigen bundle npm
 
-# Do OS dependant stuff
+# do OS dependant stuff
 case `uname` in
   Darwin)
-    # Commands for OS X go here
+    # commands for OS X go here
     antigen bundle osx
   ;;
   Linux)
-    # Commands for Linux go here
+    # commands for Linux go here
   ;;
 esac
 
-# Set the theme
-antigen theme theunraveler
-
-# And lastly, apply the Antigen stuff
+# set the theme
+antigen theme fino-time
+# apply the Antigen stuff
 antigen apply
 
 # Set list of themes to pick from when loading at random
@@ -132,3 +137,4 @@ antigen apply
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
