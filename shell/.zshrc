@@ -4,8 +4,7 @@
 ZSH_BASE=$HOME/dotfiles
 
 # paths
-export ZSH="$ZSH_BASE/.oh-my-zsh" # path to oh-my-zsh
-export NVM_DIR="$ZSH_BASE/.nvm" # path to nvm 
+export ZSH="$HOME/.oh-my-zsh" # path to oh-my-zsh
 
 # source some extra files
 source $ZSH/oh-my-zsh.sh
