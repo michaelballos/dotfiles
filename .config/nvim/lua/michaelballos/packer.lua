@@ -1,3 +1,4 @@
+local map = require('utils').map
 -- if there is no packer installed - clone packer
 local ensure_packer = function()
   local fn = vim.fn
@@ -37,8 +38,6 @@ return require('packer').startup {
       -- lsp ui
       'glepnir/lspsaga.nvim',
     }
-    -- pictograms
-    use 
     -- completion
     use {
       'hrsh7th/nvim-cmp',
