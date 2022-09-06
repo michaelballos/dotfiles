@@ -4,7 +4,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux"
+    - "tmux attach || tmux"
 window:
   opacity: 0.6
   decorations: Transparent
