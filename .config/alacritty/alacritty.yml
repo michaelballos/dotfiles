@@ -11,6 +11,8 @@ window:
   padding:
     y: 30
     x: 10
+  cursor:
+    unfocused_hollow: true
 font:
   normal:
     family: Anonymice NF
