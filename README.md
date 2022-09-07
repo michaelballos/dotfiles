@@ -43,4 +43,4 @@ Install will override system files
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
-Alacritty uses JetBrainsMono NF for [Nerd Fonts](https://www.nerdfonts.com/)
+Alacritty uses Anonymice NF for [Nerd Fonts](https://www.nerdfonts.com/)
