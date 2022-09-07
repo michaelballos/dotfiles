@@ -38,9 +38,9 @@ contains configs for:
 - [alacritty](https://alacritty.org/)
 - [zsh](https://www.zsh.org/)
 
-Install will override system files
+To sync install to $HOME - Install will override local files
 ```
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
-Alacritty uses Anonymice NF for [Nerd Fonts](https://www.nerdfonts.com/)
+Alacritty uses Anonymice NF from [Nerd Fonts](https://www.nerdfonts.com/)
