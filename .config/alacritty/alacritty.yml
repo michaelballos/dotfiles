@@ -6,7 +6,7 @@ shell:
     - -c
     - "tmux attach || tmux"
 window:
-  opacity: 0.6
+  opacity: 0.8
   decorations: Transparent
   padding:
     y: 30
