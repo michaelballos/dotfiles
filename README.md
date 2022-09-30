@@ -38,9 +38,11 @@ contains configs for:
 - [alacritty](https://alacritty.org/)
 - [zsh](https://www.zsh.org/)
 
+Alacritty uses [Nerd Fonts](https://www.nerdfonts.com/)
+
 Command to sync
 ```
 $ git clone https://github.com/michaelballos/dotfiles && cd dotfiles && ./install
 ```
 
-Alacritty uses [Nerd Fonts](https://www.nerdfonts.com/)
+
