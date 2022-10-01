@@ -1,4 +1,3 @@
-local map = require('utils').map
 -- if there is no packer installed - clone packer
 local ensure_packer = function()
   local fn = vim.fn
@@ -76,6 +75,8 @@ return require('packer').startup {
     use 'akinsho/toggleterm.nvim'
     -- notifications
     use 'rcarriga/nvim-notify'
+    -- converts functions to arrow functions and vice versa
+    use 'mvolkmann/vim-js-arrow-function'
 
     --[[
        --

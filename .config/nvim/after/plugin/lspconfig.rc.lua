@@ -56,4 +56,13 @@ lsp.graphql.setup({})
 lsp.jsonls.setup({})
 lsp.prismals.setup({})
 lsp.eslint.setup({})
-lsp.sumneko_lua.setup({})
+lsp.sumneko_lua.setup({
+  settings = {
+    Lua = {
+      -- rm annoying vim global warnings
+      diagnostics = {
+        globals = { 'vim' },
+      }
+    }
+  }
+})
