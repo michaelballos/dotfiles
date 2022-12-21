@@ -11,7 +11,10 @@ alias v="nvim"
 alias lg="lazygit"
 alias zc="cd $HOME/dev/zetocam"
 alias cp="cd $HOME/dev/camip"
-alias lj="cd $HOME/dev/particleSpace/leasey-jp"
+alias pslj="cd $HOME/dev/particleSpace/leasey-jp"
+alias pslja="cd $HOME/dev/particleSpace/leasey-jp-api"
+alias pswf="cd $HOME/dev/particleSpace/workspace-frontend"
+alias pswb="cd $HOME/dev/particleSpace/workspace-backend"
 
 # source some extra files
 source $ZSH/oh-my-zsh.sh
