@@ -3,6 +3,7 @@
 
 export DOTFILES=$HOME/dotfiles
 export ZSH="$HOME/.oh-my-zsh" # path to oh-my-zsh
+export PATH=${PATH}:/usr/local/mysql/bin
 
 # aliases
 alias h="cd $HOME"
@@ -12,9 +13,9 @@ alias lg="lazygit"
 alias zc="cd $HOME/dev/zetocam"
 alias cp="cd $HOME/dev/camip"
 alias pslj="cd $HOME/dev/particleSpace/leasey-jp"
-alias pslja="cd $HOME/dev/particleSpace/leasey-jp-api"
-alias pswf="cd $HOME/dev/particleSpace/workspace-frontend"
-alias pswb="cd $HOME/dev/particleSpace/workspace-backend"
+alias psljb="cd $HOME/dev/particleSpace/leasey-jp-api"
+alias psws="cd $HOME/dev/particleSpace/workspace-frontend"
+alias pswsb="cd $HOME/dev/particleSpace/workspace-backend"
 
 # source some extra files
 source $ZSH/oh-my-zsh.sh
